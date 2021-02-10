@@ -56,7 +56,7 @@ class Products extends Model {
   public function delete() {
     $sql = new Sql();
 
-    $sql->query("DELETE FROM tb_product WHERE idproduct = :idproduct", [
+    $sql->query("DELETE FROM tb_products WHERE idproduct = :idproduct", [
       ':idproduct'=>$this->getidproduct()
     ]);
 
